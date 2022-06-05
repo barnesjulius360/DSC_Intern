@@ -1,0 +1,6 @@
+library(ggplot2)
+view(diamonds)
+library(dplyr)
+
+diamonds %>% filter(price>1000 & cut=="Ideal ")->diamonds_1000_ideal
+view(diamonds_1000_ideal)
